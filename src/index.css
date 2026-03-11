@@ -6,14 +6,15 @@
 
 @layer base {
   :root {
+    /* Dark base for hero/header/footer */
     --background: 240 10% 6%;
     --foreground: 0 0% 93%;
 
     --card: 240 8% 10%;
     --card-foreground: 0 0% 93%;
 
-    --popover: 240 8% 10%;
-    --popover-foreground: 0 0% 93%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 10%;
 
     --primary: 6 85% 52%;
     --primary-foreground: 0 0% 100%;
@@ -36,6 +37,14 @@
 
     --radius: 0.75rem;
 
+    /* Light content zone */
+    --content-bg: 0 0% 98%;
+    --content-fg: 240 10% 10%;
+    --content-card: 0 0% 100%;
+    --content-card-fg: 240 10% 10%;
+    --content-muted: 240 5% 46%;
+    --content-border: 240 6% 90%;
+
     --sidebar-background: 240 10% 4%;
     --sidebar-foreground: 0 0% 93%;
     --sidebar-primary: 6 85% 52%;
@@ -46,7 +55,7 @@
     --sidebar-ring: 6 85% 52%;
 
     --red-glow: 0 0 20px hsla(6, 85%, 52%, 0.25);
-    --card-shadow: 0 2px 12px hsla(0, 0%, 0%, 0.5);
+    --card-shadow: 0 2px 12px hsla(0, 0%, 0%, 0.08);
   }
 }
 
