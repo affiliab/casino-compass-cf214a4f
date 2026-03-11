@@ -6,47 +6,47 @@
 
 @layer base {
   :root {
-    --background: 220 25% 10%;
-    --foreground: 210 40% 98%;
+    --background: 0 15% 7%;
+    --foreground: 0 0% 95%;
 
-    --card: 220 25% 13%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 12% 11%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 220 25% 13%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 12% 11%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 45 100% 50%;
-    --primary-foreground: 220 25% 10%;
+    --primary: 0 78% 55%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 20% 18%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 10% 16%;
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 220 20% 18%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 0 8% 16%;
+    --muted-foreground: 0 5% 60%;
 
-    --accent: 220 20% 22%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 0 12% 18%;
+    --accent-foreground: 0 0% 95%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 215 15% 25%;
-    --input: 215 15% 25%;
-    --ring: 45 100% 60%;
+    --border: 0 8% 20%;
+    --input: 0 8% 20%;
+    --ring: 0 78% 55%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 220 25% 8%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 45 100% 50%;
-    --sidebar-primary-foreground: 220 25% 10%;
-    --sidebar-accent: 220 20% 15%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 215 15% 20%;
-    --sidebar-ring: 45 100% 60%;
+    --sidebar-background: 0 15% 5%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 0 78% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 10% 13%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 8% 18%;
+    --sidebar-ring: 0 78% 55%;
 
-    --gold-glow: 0 0 20px hsla(45, 100%, 50%, 0.3);
-    --card-shadow: 0 2px 12px hsla(0, 0%, 0%, 0.4);
+    --gold-glow: 0 0 20px hsla(0, 78%, 55%, 0.3);
+    --card-shadow: 0 2px 12px hsla(0, 0%, 0%, 0.5);
   }
 }
 
