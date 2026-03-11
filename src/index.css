@@ -96,25 +96,25 @@
   }
 
   .text-gradient-gold {
-    background: linear-gradient(135deg, hsl(45, 100%, 50%), hsl(38, 100%, 65%));
+    background: linear-gradient(135deg, hsl(0, 78%, 55%), hsl(15, 90%, 60%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .border-gold {
-    border-color: hsl(45, 100%, 50%);
+    border-color: hsl(0, 78%, 55%);
   }
 
   .bg-surface {
-    background-color: hsl(220, 25%, 13%);
+    background-color: hsl(0, 12%, 11%);
   }
 
   .bg-surface-elevated {
-    background-color: hsl(220, 25%, 16%);
+    background-color: hsl(0, 12%, 14%);
   }
 
   .hero-gradient {
-    background: linear-gradient(135deg, hsl(220, 25%, 10%) 0%, hsl(0, 40%, 12%) 50%, hsl(220, 25%, 10%) 100%);
+    background: linear-gradient(135deg, hsl(0, 15%, 7%) 0%, hsl(0, 30%, 12%) 50%, hsl(0, 15%, 7%) 100%);
   }
 }
