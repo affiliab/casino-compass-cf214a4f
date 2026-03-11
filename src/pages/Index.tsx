@@ -28,42 +28,79 @@ const Index = () => {
       {/* Dark Hero Zone */}
       <div className="hero-gradient">
         <section className="container py-10 sm:py-16">
-          <motion.div {...fadeUp}>
-            <p className="font-caps text-xs text-primary mb-3">Guía actualizada · Marzo 2026</p>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight mb-4 text-white">
-              Mejores Casinos Sin Licencia en España
-              <span className="text-gradient-gold block sm:inline"> - Guía de Experto 2026</span>
-            </h1>
-            <p className="text-white/70 max-w-2xl mb-6 text-base sm:text-lg">
-              Tras probar más de 40 plataformas, he seleccionado los 8 casinos online sin licencia DGOJ que ofrecen los mejores bonos, pagos rápidos y experiencia real para jugadores españoles.
-            </p>
-          </motion.div>
-          <motion.div {...fadeUp} transition={{ duration: 0.5, ease: [0.3, 0, 0.2, 1] as const, delay: 0.1 }}>
-            <img
-              src={heroCasino}
-              alt="Elementos de casino online como ruleta, cartas y fichas doradas representando los mejores casinos sin licencia en España en 2026"
-              width={1200}
-              height={600}
-              className="rounded-xl w-full object-cover"
-              loading="eager"
-            />
-          </motion.div>
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+            {/* Left — Text */}
+            <motion.div {...fadeUp}>
+              <p className="font-caps text-xs text-primary mb-3">Guía actualizada · Marzo 2026</p>
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight mb-5 text-white">
+                Casinos Sin Licencia en España
+                <span className="text-gradient-gold block"> — 2026</span>
+              </h1>
+              <p className="text-white/65 mb-6 text-base leading-relaxed">
+                Los casinos sin licencia en España representan una alternativa cada vez más popular entre jugadores que buscan mayor libertad y mejores condiciones de juego. Tras probar más de 40 plataformas, he seleccionado los mejores para ti.
+              </p>
+              <div className="flex items-center gap-3 text-sm text-white/50">
+                <span className="font-caps text-xs">Última actualización:</span>
+                <span>Mar, 11 2026</span>
+              </div>
+            </motion.div>
+
+            {/* Right — Top 3 Brand Cards */}
+            <motion.div
+              {...fadeUp}
+              transition={{ duration: 0.5, ease: [0.3, 0, 0.2, 1] as const, delay: 0.15 }}
+              className="flex flex-col gap-4"
+            >
+              {[
+                { name: "Bassbet", bonus: "500€ + 200 FS", highlight: "100%", sub: "HASTA 500 EUR + 200 GG", color: "from-violet-600/20 to-violet-900/30" },
+                { name: "Alfcasino", bonus: "450€ + 150 FS", highlight: "150%", sub: "HASTA 450 EUR + 150 GG", color: "from-blue-600/20 to-blue-900/30" },
+                { name: "24slots", bonus: "600€ + 240 FS", highlight: "200%", sub: "HASTA 600 EUR + 240 GG", color: "from-amber-600/20 to-amber-900/30" },
+              ].map((brand, i) => (
+                <div
+                  key={brand.name}
+                  className="group relative flex items-center gap-4 rounded-xl border border-primary/30 bg-gradient-to-r from-white/5 to-white/[0.02] backdrop-blur p-4 sm:p-5 hover:border-primary/60 transition-all duration-300"
+                >
+                  {/* Logo placeholder */}
+                  <div className={`w-16 h-16 sm:w-20 sm:h-20 rounded-lg bg-gradient-to-br ${brand.color} border border-white/10 flex items-center justify-center shrink-0`}>
+                    <span className="text-white font-black text-sm sm:text-base tracking-tight">{brand.name.slice(0, 4).toUpperCase()}</span>
+                  </div>
+
+                  {/* Info */}
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-bold text-white text-sm sm:text-base uppercase tracking-wide">{brand.name}</h3>
+                    <p className="text-primary font-black text-base sm:text-lg leading-tight">
+                      {brand.highlight} <span className="text-white font-bold text-sm">HASTA</span>
+                    </p>
+                    <p className="text-primary font-bold text-sm">{brand.sub.split("HASTA ")[1]}</p>
+                  </div>
+
+                  {/* CTA */}
+                  <a
+                    href={`#${brand.name.toLowerCase().replace(/[^a-z0-9]/g, "")}`}
+                    className="shrink-0 bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-xs sm:text-sm px-4 sm:px-6 py-2.5 sm:py-3 rounded-full uppercase tracking-wider transition-all duration-200 shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:scale-105"
+                  >
+                    ¡Jugar ahora!
+                  </a>
+                </div>
+              ))}
+            </motion.div>
+          </div>
         </section>
 
-        {/* Table of Contents - still on dark */}
+        {/* Table of Contents */}
         <section className="container pb-10">
           <motion.div {...fadeUp} className="bg-white/5 backdrop-blur rounded-xl p-5 border border-white/10">
             <h2 className="font-caps text-xs text-primary mb-3">Contenido</h2>
             <nav>
-              <ol className="space-y-1.5 text-sm">
-                <li><a href="#ranking" className="text-white/60 hover:text-primary transition-colors">1. Top 8 Casinos Sin Licencia en España 2026</a></li>
+              <ol className="columns-1 sm:columns-2 space-y-1.5 text-sm">
+                <li><a href="#ranking" className="text-white/60 hover:text-primary transition-colors">1. Top 8 Casinos Sin Licencia 2026</a></li>
                 <li><a href="#que-son" className="text-white/60 hover:text-primary transition-colors">2. ¿Qué son los casinos sin licencia?</a></li>
                 <li><a href="#bonos" className="text-white/60 hover:text-primary transition-colors">3. Bonos y promociones destacados</a></li>
                 <li><a href="#como-elegimos" className="text-white/60 hover:text-primary transition-colors">4. Cómo evaluamos cada casino</a></li>
                 <li><a href="#ventajas" className="text-white/60 hover:text-primary transition-colors">5. Ventajas y desventajas</a></li>
                 <li><a href="#seguridad" className="text-white/60 hover:text-primary transition-colors">6. Seguridad y métodos de pago</a></li>
                 <li><a href="#tests" className="text-white/60 hover:text-primary transition-colors">7. Resultados de nuestros tests</a></li>
-                <li><a href="#movil" className="text-white/60 hover:text-primary transition-colors">8. Casinos sin licencia desde el móvil</a></li>
+                <li><a href="#movil" className="text-white/60 hover:text-primary transition-colors">8. Casinos desde el móvil</a></li>
                 <li><a href="#juego-responsable" className="text-white/60 hover:text-primary transition-colors">9. Juego responsable</a></li>
                 <li><a href="#faq" className="text-white/60 hover:text-primary transition-colors">10. Preguntas frecuentes</a></li>
                 <li><a href="#autor" className="text-white/60 hover:text-primary transition-colors">11. Sobre el autor</a></li>
