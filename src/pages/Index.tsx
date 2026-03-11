@@ -8,7 +8,7 @@ import AttentionBlock from "@/components/AttentionBlock";
 import ProsConsBlock from "@/components/ProsConsBlock";
 import TestResultBlock from "@/components/TestResultBlock";
 
-import heroCasino from "@/assets/hero-casino.webp";
+// hero image removed — brand cards used instead
 import casinoBonos from "@/assets/casino-bonos.webp";
 import casinoSeguridad from "@/assets/casino-seguridad.webp";
 import casinoMovil from "@/assets/casino-movil.webp";
