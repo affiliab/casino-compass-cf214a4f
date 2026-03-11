@@ -457,6 +457,7 @@ const Index = () => {
       <motion.div {...fadeUp}>
         <AuthorBox />
       </motion.div>
+      </div>{/* end light-zone */}
     </Layout>
   );
 };
