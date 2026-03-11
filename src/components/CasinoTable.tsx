@@ -65,13 +65,13 @@ const CasinoTable = () => {
           <article
             key={c.rank}
             id={c.name.toLowerCase().replace(/[^a-z0-9]/g, "")}
-            className="bg-card rounded-xl p-4 sm:p-6 card-elevated hover:border-primary/30 border border-transparent transition-all duration-200"
+            className="bg-card rounded-xl p-4 sm:p-6 card-elevated border border-border hover:border-primary/40 transition-all duration-200"
           >
             <div className="flex flex-col sm:flex-row sm:items-center gap-4">
               <div className="flex items-center gap-3 sm:w-48">
                 <span className="text-2xl font-bold text-primary font-tabular">#{c.rank}</span>
                 <div>
-                  <h3 className="font-bold text-lg text-foreground">{c.name}</h3>
+                  <h3 className="font-bold text-lg">{c.name}</h3>
                   <StarRating rating={c.rating} />
                 </div>
               </div>
@@ -79,15 +79,15 @@ const CasinoTable = () => {
               <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm">
                 <div>
                   <span className="text-muted-foreground block text-xs font-caps">Bono</span>
-                  <span className="text-foreground font-medium">{c.bonus}</span>
+                  <span className="font-medium text-primary">{c.bonus}</span>
                 </div>
                 <div>
                   <span className="text-muted-foreground block text-xs font-caps">Juegos</span>
-                  <span className="text-foreground font-medium font-tabular">{c.games}</span>
+                  <span className="font-medium font-tabular">{c.games}</span>
                 </div>
                 <div>
                   <span className="text-muted-foreground block text-xs font-caps">Pago</span>
-                  <span className="text-foreground font-medium">{c.payout}</span>
+                  <span className="font-medium">{c.payout}</span>
                 </div>
               </div>
 
