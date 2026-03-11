@@ -5,7 +5,8 @@ const Footer = () => (
     <div className="container py-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
         <div>
-          <span className="text-lg font-bold text-gradient-gold block mb-3">♠ CasinoSinLicencia</span>
+          <span className="text-lg font-bold text-foreground block mb-1">♠ Casinos</span>
+          <span className="text-sm font-bold text-primary block mb-3">Sin Licencia</span>
           <p className="text-sm text-muted-foreground leading-relaxed">
             Guía experta independiente sobre casinos online sin licencia en España. Análisis actualizado en 2026.
           </p>
