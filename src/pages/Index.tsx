@@ -15,7 +15,7 @@ const fadeUp = {
   initial: { opacity: 0, y: 8 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true, margin: "-60px" },
-  transition: { duration: 0.5, ease: [0.3, 0, 0.2, 1] },
+  transition: { duration: 0.5, ease: [0.3, 0, 0.2, 1] as const },
 };
 
 const Index = () => {
