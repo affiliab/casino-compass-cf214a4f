@@ -33,7 +33,7 @@ const Index = () => {
             Tras probar más de 40 plataformas, he seleccionado los 8 casinos online sin licencia DGOJ que ofrecen los mejores bonos, pagos rápidos y experiencia real para jugadores españoles.
           </p>
         </motion.div>
-        <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.1 }}>
+        <motion.div {...fadeUp} transition={{ duration: 0.5, ease: [0.3, 0, 0.2, 1] as const, delay: 0.1 }}>
           <img
             src={heroCasino}
             alt="Elementos de casino online como ruleta, cartas y fichas doradas representando los mejores casinos sin licencia en España en 2026"
