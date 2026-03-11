@@ -25,56 +25,60 @@ const fadeUp = {
 const Index = () => {
   return (
     <Layout>
-      {/* Hero */}
-      <section className="container py-10 sm:py-16">
+      {/* Dark Hero Zone */}
+      <div className="hero-gradient">
+        <section className="container py-10 sm:py-16">
+          <motion.div {...fadeUp}>
+            <p className="font-caps text-xs text-primary mb-3">Guía actualizada · Marzo 2026</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight mb-4 text-white">
+              Mejores Casinos Sin Licencia en España
+              <span className="text-gradient-gold block sm:inline"> - Guía de Experto 2026</span>
+            </h1>
+            <p className="text-white/70 max-w-2xl mb-6 text-base sm:text-lg">
+              Tras probar más de 40 plataformas, he seleccionado los 8 casinos online sin licencia DGOJ que ofrecen los mejores bonos, pagos rápidos y experiencia real para jugadores españoles.
+            </p>
+          </motion.div>
+          <motion.div {...fadeUp} transition={{ duration: 0.5, ease: [0.3, 0, 0.2, 1] as const, delay: 0.1 }}>
+            <img
+              src={heroCasino}
+              alt="Elementos de casino online como ruleta, cartas y fichas doradas representando los mejores casinos sin licencia en España en 2026"
+              width={1200}
+              height={600}
+              className="rounded-xl w-full object-cover"
+              loading="eager"
+            />
+          </motion.div>
+        </section>
+
+        {/* Table of Contents - still on dark */}
+        <section className="container pb-10">
+          <motion.div {...fadeUp} className="bg-white/5 backdrop-blur rounded-xl p-5 border border-white/10">
+            <h2 className="font-caps text-xs text-primary mb-3">Contenido</h2>
+            <nav>
+              <ol className="space-y-1.5 text-sm">
+                <li><a href="#ranking" className="text-white/60 hover:text-primary transition-colors">1. Top 8 Casinos Sin Licencia en España 2026</a></li>
+                <li><a href="#que-son" className="text-white/60 hover:text-primary transition-colors">2. ¿Qué son los casinos sin licencia?</a></li>
+                <li><a href="#bonos" className="text-white/60 hover:text-primary transition-colors">3. Bonos y promociones destacados</a></li>
+                <li><a href="#como-elegimos" className="text-white/60 hover:text-primary transition-colors">4. Cómo evaluamos cada casino</a></li>
+                <li><a href="#ventajas" className="text-white/60 hover:text-primary transition-colors">5. Ventajas y desventajas</a></li>
+                <li><a href="#seguridad" className="text-white/60 hover:text-primary transition-colors">6. Seguridad y métodos de pago</a></li>
+                <li><a href="#tests" className="text-white/60 hover:text-primary transition-colors">7. Resultados de nuestros tests</a></li>
+                <li><a href="#movil" className="text-white/60 hover:text-primary transition-colors">8. Casinos sin licencia desde el móvil</a></li>
+                <li><a href="#juego-responsable" className="text-white/60 hover:text-primary transition-colors">9. Juego responsable</a></li>
+                <li><a href="#faq" className="text-white/60 hover:text-primary transition-colors">10. Preguntas frecuentes</a></li>
+                <li><a href="#autor" className="text-white/60 hover:text-primary transition-colors">11. Sobre el autor</a></li>
+              </ol>
+            </nav>
+          </motion.div>
+        </section>
+      </div>
+
+      {/* Light Content Zone */}
+      <div className="light-zone">
+        {/* Casino Table */}
         <motion.div {...fadeUp}>
-          <p className="font-caps text-xs text-primary mb-3">Guía actualizada · Marzo 2026</p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight mb-4">
-            Mejores Casinos Sin Licencia en España
-            <span className="text-gradient-gold block sm:inline"> - Guía de Experto 2026</span>
-          </h1>
-          <p className="text-muted-foreground max-w-2xl mb-6 text-base sm:text-lg">
-            Tras probar más de 40 plataformas, he seleccionado los 8 casinos online sin licencia DGOJ que ofrecen los mejores bonos, pagos rápidos y experiencia real para jugadores españoles.
-          </p>
+          <CasinoTable />
         </motion.div>
-        <motion.div {...fadeUp} transition={{ duration: 0.5, ease: [0.3, 0, 0.2, 1] as const, delay: 0.1 }}>
-          <img
-            src={heroCasino}
-            alt="Elementos de casino online como ruleta, cartas y fichas doradas representando los mejores casinos sin licencia en España en 2026"
-            width={1200}
-            height={600}
-            className="rounded-xl w-full object-cover card-elevated"
-            loading="eager"
-          />
-        </motion.div>
-      </section>
-
-      {/* Table of Contents */}
-      <section className="container pb-8">
-        <motion.div {...fadeUp} className="bg-card rounded-xl p-5 card-elevated">
-          <h2 className="font-caps text-xs text-primary mb-3">Contenido</h2>
-          <nav>
-            <ol className="space-y-1.5 text-sm">
-              <li><a href="#ranking" className="text-muted-foreground hover:text-primary transition-colors">1. Top 8 Casinos Sin Licencia en España 2026</a></li>
-              <li><a href="#que-son" className="text-muted-foreground hover:text-primary transition-colors">2. ¿Qué son los casinos sin licencia?</a></li>
-              <li><a href="#bonos" className="text-muted-foreground hover:text-primary transition-colors">3. Bonos y promociones destacados</a></li>
-              <li><a href="#como-elegimos" className="text-muted-foreground hover:text-primary transition-colors">4. Cómo evaluamos cada casino</a></li>
-              <li><a href="#ventajas" className="text-muted-foreground hover:text-primary transition-colors">5. Ventajas y desventajas</a></li>
-              <li><a href="#seguridad" className="text-muted-foreground hover:text-primary transition-colors">6. Seguridad y métodos de pago</a></li>
-              <li><a href="#tests" className="text-muted-foreground hover:text-primary transition-colors">7. Resultados de nuestros tests</a></li>
-              <li><a href="#movil" className="text-muted-foreground hover:text-primary transition-colors">8. Casinos sin licencia desde el móvil</a></li>
-              <li><a href="#juego-responsable" className="text-muted-foreground hover:text-primary transition-colors">9. Juego responsable</a></li>
-              <li><a href="#faq" className="text-muted-foreground hover:text-primary transition-colors">10. Preguntas frecuentes</a></li>
-              <li><a href="#autor" className="text-muted-foreground hover:text-primary transition-colors">11. Sobre el autor</a></li>
-            </ol>
-          </nav>
-        </motion.div>
-      </section>
-
-      {/* Casino Table */}
-      <motion.div {...fadeUp}>
-        <CasinoTable />
-      </motion.div>
 
       {/* Expert quote after table */}
       <motion.div {...fadeUp}>
@@ -453,6 +457,7 @@ const Index = () => {
       <motion.div {...fadeUp}>
         <AuthorBox />
       </motion.div>
+      </div>{/* end light-zone */}
     </Layout>
   );
 };
