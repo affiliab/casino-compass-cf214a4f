@@ -88,33 +88,38 @@
   }
 
   .gold-glow {
-    box-shadow: var(--gold-glow);
+    box-shadow: var(--red-glow);
   }
 
   .card-elevated {
-    box-shadow: var(--card-shadow), 0 0 0 1px hsla(0, 0%, 100%, 0.05);
+    box-shadow: var(--card-shadow), 0 0 0 1px hsla(0, 0%, 100%, 0.04);
   }
 
   .text-gradient-gold {
-    background: linear-gradient(135deg, hsl(0, 78%, 55%), hsl(15, 90%, 60%));
+    background: linear-gradient(135deg, hsl(6, 85%, 52%), hsl(20, 95%, 55%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .border-gold {
-    border-color: hsl(0, 78%, 55%);
+    border-color: hsl(6, 85%, 52%);
   }
 
   .bg-surface {
-    background-color: hsl(0, 12%, 11%);
+    background-color: hsl(240, 8%, 10%);
   }
 
   .bg-surface-elevated {
-    background-color: hsl(0, 12%, 14%);
+    background-color: hsl(240, 8%, 13%);
   }
 
   .hero-gradient {
-    background: linear-gradient(135deg, hsl(0, 15%, 7%) 0%, hsl(0, 30%, 12%) 50%, hsl(0, 15%, 7%) 100%);
+    background: linear-gradient(180deg, hsl(240, 10%, 6%) 0%, hsl(350, 40%, 10%) 50%, hsl(240, 10%, 6%) 100%);
+  }
+
+  .gradient-line {
+    background: linear-gradient(90deg, transparent, hsl(6, 85%, 52%), hsl(20, 90%, 50%), hsl(6, 85%, 52%), transparent);
+    height: 2px;
   }
 }
