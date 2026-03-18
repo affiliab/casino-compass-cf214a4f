@@ -41,7 +41,7 @@ const Index = () => {
               </p>
               <div className="flex items-center gap-3 text-sm text-white/50">
                 <span className="font-caps text-xs">Última actualización:</span>
-                <span>Mar, 11 2026</span>
+                <span>Mar, 17 2026</span>
               </div>
             </motion.div>
 
