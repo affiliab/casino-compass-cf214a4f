@@ -34,7 +34,7 @@ const Index = () => {
               <p className="font-caps text-xs text-primary mb-3">Guía actualizada · Marzo 2026</p>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight mb-5 text-white">
                 Casinos Sin Licencia en España
-                <span className="text-gradient-gold block"> — 2026</span>
+                <span className="text-gradient-gold block"> 2026</span>
               </h1>
               <p className="text-white/65 mb-6 text-base leading-relaxed">
                 Los casinos sin licencia en España representan una alternativa cada vez más popular entre jugadores que buscan mayor libertad y mejores condiciones de juego. Tras probar más de 40 plataformas, he seleccionado los mejores para ti.
